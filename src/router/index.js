@@ -1,7 +1,13 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 Vue.use(Router)
-var constantRouterMap=[]
+var constantRouterMap=[
+  {
+    path: '/',
+    component: () => import('@/views/login/index'),
+    hidden: true
+  }
+]
 
 // export const constantRouterMap = [
 //   {
